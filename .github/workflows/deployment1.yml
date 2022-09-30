@@ -17,4 +17,4 @@ jobs:
       - name: deploy website
         run: |
           echo "start upload to s3"
-          aws s3 cp index.html s3://nice-place-paca-bucket-213421/ --acl public-read
+          aws s3 cp index.html s3://alpaca-bucket-1/ --acl public-read
