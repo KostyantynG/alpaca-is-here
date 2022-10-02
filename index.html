@@ -10,16 +10,16 @@
         background-color: #7cc9e3;
     }
     img {
-        border-radius: 100px;
+        border-radius: 300px;
         position: absolute;
-        top: 10px;
-        left: 10px;
+        top: 25px;
+        left: 25px;
         transition: transform 0.3s;
     }
 </style>
 
 <body>
-    <img id="alpaca" src="https://sunday-bucket-2.s3.eu-central-1.amazonaws.com/pug.jpg" width="100"/>
+    <img id="alpaca" src="https://sunday-bucket-2.s3.eu-central-1.amazonaws.com/pug.jpg" width="200"/>
     <p>
         Click anywhere and place your pug
     </p>
@@ -27,8 +27,8 @@
 <script>
     const alpaca = document.getElementById('alpaca');
     document.addEventListener('click', function(ev){
-        alpaca.style.transform = 'translateY('+(ev.clientY-100)+'px)';
-        alpaca.style.transform += 'translateX('+(ev.clientX-100)+'px)';
+        alpaca.style.transform = 'translateY('+(ev.clientY-25)+'px)';
+        alpaca.style.transform += 'translateX('+(ev.clientX-25)+'px)';
     },false);
 </script>
 </html>
